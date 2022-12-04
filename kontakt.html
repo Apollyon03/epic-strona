@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankieta :-)</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,700&display=swap" rel="stylesheet">
+<body>
+    <header id="tytul">
+        <h1>WSPINACZKA</h1>
+    </header>
+    <nav class="menu">
+        <a href="index.html" class="a_1">Strona główna</a>
+        <a href="galeria.html" class="a_1">Galeria</a>
+        <a href="kontakt.html" id="kontakt" class="a_1">Ankieta</a>
+        <div class="rozwijanie">
+            <a href="#" class="a_1">Menu</a>
+            <ul class="menu_1">
+                <li>
+                    <a href="javascript:">Rodzaje wspinaczki</a>
+                    <ul class="ul_1">
+                        <li><a href="index.html#bouldering" class="a_2">Bouldering</a></li>
+                        <li><a href="index.html#lina" class="a_2">Wspinaczka z liną</a></li>
+                        <li><a href="index.html#trad" class="a_2">Wspinaczka tradycyjna</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#wspinacze">Znani wspinacze</a></li>
+                <li><a href="index.html#zrodla">Dodatkowe informacje</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="wnetrze" id="wnetrze-kontakt">
+        <p class="ankieta">Zapraszamy do wypełnienia krótkiej ankiety statystycznej w celach naukowo-edukacyjnych</p>
+        <div class="formularz">
+            <p>
+                Ankieta statystyczna
+            </p>
+            <form>
+                <table>
+                    <tr>
+                        <th>Imię:</th>
+                        <td>
+                            <input type="text" name="imie" placeholder="Podaj swoje imię">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Nazwisko:</th>
+                        <td>
+                            <input type="text" name="nazwisko" placeholder="Podaj swoje nazwisko">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Adres e-mail:</th>
+                        <td>
+                            <input type="email" name="email" placeholder="Podaj swój email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Płeć:</th>
+                        <td>
+                            <label for="male">Mężczyzna</label>
+                            <input type="radio" name="plec" id="male" value="male" checked><br>
+                            <label for="male">Kobieta</label>
+                            <input type="radio" name="plec" id="female" value="female" checked>
+                        </td>
+                   </tr>
+                   <tr>
+                        <th id="aktywnosci">Aktywności, które wcześniej wykonywałeś&sol;aś:</th>
+                        <td>
+                            <input type="checkbox" name="wspinaczka-lina" value="wspinaczka-lina">Wspinaczka z liną<br>
+                            <input type="checkbox" name="bouldering" value="bouldering">Bouldering<br>
+                            <input type="checkbox" name="silownia" value="silownia">Siłownia
+
+                        </td>
+                   </tr>
+                   <tr>
+                        <th>Wiek:</th>
+                        <td>
+                            <select>
+                                <option value="" selected disabled hidden>Wybierz</option>
+                                <option value="0-14">0-14</option>
+                                <option value="15-20">15-20</option>
+                                <option value="21-35">21-35</option>
+                                <option value="36-50">36-50</option>
+                                <option value="51+">&gt;51</option>
+                            </select>
+                        </td>
+                   </tr>
+                   <tr>
+                        <th>Kilka słów o sobie:</th>
+                        <td>
+                            <textarea rows="3" cols="20" placeholder="Napisz coś o sobie :-)"></textarea>
+                        </td>
+                   </tr>
+                   <tr>
+                    <th>Czy chcesz otrzymywać newsletter?</th>
+                    <td>
+                        <label for="tak">Tak</label>
+                        <input type="radio" name="newsletter" id="tak" value="tak" checked>
+                        <label for="nie">Nie</label>
+                        <input type="radio" name="newsletter" id="nie" value="nie" checked>
+                    </td>
+               </tr>
+            </table>
+                <input type="submit" value="Wyślij">
+                <input type="reset">
+            </form>
+        </div>
+    </div>
+
+    <footer class="stopka">
+        Copyright &copy;2022, Gabriel Goliński&emsp;
+        <a href="#top">góra &#8593;</a>
+    </footer>
+</body>
+</html>
